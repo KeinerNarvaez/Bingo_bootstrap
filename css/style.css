@@ -1,0 +1,75 @@
+*{
+    font-family: BINGO;
+}
+@font-face {
+    font-family:BINGO ;
+    src: url(../BINGO.ttf);
+}
+#pagina{
+    display: grid;
+    place-items: center;
+}
+body{
+    background-color: rgb(255, 127, 76);
+}
+.targeta{
+    border: 1px solid rgb(53, 33, 13);
+    background-color: rgb(53, 33, 13);
+    height:auto;
+    margin-bottom: 10px;
+}
+.card-body {
+    padding-right: 0px;
+    margin: 2px;
+    border-radius: 0px;
+}
+
+.hr{
+    height: 15px;
+    border: 1px solid rgb(227, 185, 130);
+    border-radius: 0.2pc;
+    width: 90%;
+    margin-left: 13px;
+    background-color: rgb(227, 185, 130);
+}
+.titulo {
+    color: rgb(227, 185, 130);
+    margin-left: 2px;
+}
+.parte_numerica h1 {
+    color: rgb(53, 33, 13);
+    padding-left: 0px;
+}
+.sub-caja{
+    margin: 10%;
+    width: 90%;
+}
+.titulo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.separacion_letra{
+    text-align: center;
+}
+.parte_numerica{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.separacion_numero{
+    background-color: rgb(233, 210, 181);
+    width: 72px;
+    font-size:xx-large;
+    margin: 3px;
+    text-align: center;
+}
+
+.scroll{
+    margin-top: 60px;
+}
+.rojo {
+    background-color: red;
+}
