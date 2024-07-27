@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 </div>`;
     }
-    for (let index = 0; index < 5; index++) {
-        let iteracion = [];
-        for (let i = 0; i < 5; i++) {
+    for (let vecesIteracion = 0; vecesIteracion < 5; vecesIteracion++) {
+        let matriz = [];
+        for (let vecesIteracion2 = 0; vecesIteracion2 < 5; vecesIteracion2++) {
             let resultado = Math.floor(Math.random() * 100);
-            iteracion.push(resultado);
+            matriz.push(resultado);
         }
-        random.push(iteracion);
+        random.push(matriz);
     }
     
     console.log(random);
@@ -89,14 +89,14 @@ document.addEventListener('DOMContentLoaded', function () {
                  <div class="hr"></div>
                   
                  <div class="parte_numerica">`;
-                        for (let i = 0; i <5; i++) {
+                        for (let iteracion = 0; iteracion <5; iteracion++) {
                             for (iteracionMultiplo = 0; iteracionMultiplo < 5; iteracionMultiplo++) {
-                                if (i === iteracionMultiplo || iteracionMultiplo+i===4) {
+                                if (iteracion=== iteracionMultiplo || iteracionMultiplo+iteracion===4) {
                                     claseRojo='rojo'
                                 }  else{
                                     claseRojo=""
                                 }      
-                                print += `<h1 class="separacion_numero text-bold display-5 `+claseRojo+`">`+random[i][iteracionMultiplo]+`</h1>`;
+                                print += `<h1 class="separacion_numero text-bold display-5 `+claseRojo+`">`+random[iteracion][iteracionMultiplo]+`</h1>`;
                             }                          
                         }
         print += `</div>
@@ -104,13 +104,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>`;
     }
     random=[];
-    for (let index = 0; index < 5; index++) {
-        let iteracion = [];
-        for (let i = 0; i < 5; i++) {
+    for (let vecesIteracion = 0; vecesIteracion < 5; vecesIteracion++) {
+        let matriz = [];
+        for (let vecesIteracion2 = 0; vecesIteracion2 < 5; vecesIteracion2++) {
             let resultado = Math.floor(Math.random() * 100);
-            iteracion.push(resultado);
+            matriz.push(resultado);
         }
-        random.push(iteracion);
+        random.push(matriz);
     }
     console.log(random);
     for (iteracionTabla = 0; iteracionTabla < 1; iteracionTabla++) {
@@ -135,14 +135,14 @@ document.addEventListener('DOMContentLoaded', function () {
                   
                  <div class="parte_numerica">`;
                         
-                        for (let i = 0; i <5; i++) {
+                        for (let iteracion = 0; iteracion <5; iteracion++) {
                             for (iteracionMultiplo = 0; iteracionMultiplo < 5; iteracionMultiplo++) {
-                                if (iteracionMultiplo*i==8||iteracionMultiplo+i==2||iteracionMultiplo+i===0||i+iteracionMultiplo==(i+1)*2 || i+iteracionMultiplo==4) {
+                                if (iteracionMultiplo*iteracion==8||iteracionMultiplo+iteracion==2||iteracionMultiplo+iteracion===0||iteracion+iteracionMultiplo==(iteracion+1)*2 || iteracion+iteracionMultiplo==4) {
                                     claseRojo='rojo'
                                 }  else{
                                     claseRojo=""
                                 }      
-                                print += `<h1 class="separacion_numero text-bold display-5 `+claseRojo+`">`+random[i][iteracionMultiplo]+`</h1>`;
+                                print += `<h1 class="separacion_numero text-bold display-5 `+claseRojo+`">`+random[iteracion][iteracionMultiplo]+`</h1>`;
                             }                          
                         }
         print += `</div>
